@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelat</title>
+</head>
+<body>
+    <h1>Tabela no HTML5:</h1>
+    <!-- Estrutura mínima de uma tabela -->
+     <table border="1">
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5 </td>
+            <td>Dado 6 </td>
+        </tr>
+     </table>
+     <!--quebra de linha-->
+     <br><br><br>
+     <!--Tabela com mesclagem-->
+     <table border="1">
+        <caption> Vendas do mês </caption> 
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</tr>
+                <th>Valor</th>
+                </tr>
+         </thead>
+        <tbody>
+            <!-- linha 1-->
+            <tr>
+                <!--rowspan mescla linhas -->
+                <td rowspan="2">Mouse</td>
+                <td>10</td>
+                <td>R$500</td>
+            
+            </tr>
+
+            <tr>
+                <td>Mouse</td>
+                <td>20</td>
+                <td>R$1000</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total:</td>
+                <td>R$1500,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
