@@ -6,23 +6,37 @@
     <title>Tabela zebrada</title>
 </head>
 <body>
-    <table>
+    <table border="1">
         <thead>
             <tr>
-                <th>
+                <th colspan="6">
                 <h3>Tabela de clientes</h3>
                 
 
                 </th>
             </tr>
             <tr>
-                <th scope="col">Dados pessoais:</th>
-                <th scope="col">Endereço:</th>
+                <th scope="col" colspan="3">Dados pessoais:</th>
+                <th scope="col" colspan="2">Endereço:</th>
                 <th scope="col">Contato</th>
             </tr>
-
         </thead>
+        <tbody>
+            <tr>
+                <!-- Dados pessoais -->
+                <th socpe="col">Nome:</th>
+                <th scope= "col">Idade</th>
+                <th scope= "col">Profissão</th>
+                <!-- Endereço -->
+                 <th>Rua:</th>
+                 <th>Cidade:</th>
+                 <!-- Contato -->
+                 <th>E-mail:</th>
 
+
+
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
