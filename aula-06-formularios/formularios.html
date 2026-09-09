@@ -1,22 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulários</title>
-</head>
-<body>
-   <h1>Formulários no HTML5</h1>
-   <form action="/cadastrar" method="POST">
-    <label for="nome"> Insira seu nome:</label><br>
-    <!-- Input text -->
-    <input type="text" id="nome" placeholder="Insiria seu nome completo"><br>
-    <!-- Input email -->
-     <label for="email">E-mail:</label><br>
-    <input type="email" id="email" placeholder="Insira seu email..."><br>
-    <!-- Input password -->
-     <label for="senha"> Senha:</label><br>
-    <input type="password" id="senha" placeholder="Insira sua senha"><br>
-   </form> 
-</body>
+  </head>
+  <body>
+    <h1>Formulários no HTML5</h1>
+    <form action="#" method="POST">
+      <label for="nome"> Insira seu nome:</label><br />
+      <!-- Input text -->
+      <input
+        name="nome"
+        type="text"
+        id="nome"
+        placeholder="Insiria seu nome completo"
+      /><br />
+      <!-- Input email -->
+      <label for="email">E-mail:</label><br />
+      <input name="email" type="email" id="email" placeholder="Insira seu email..." /><br />
+      <!-- Input password -->
+      <label for="senha"> Senha:</label><br />
+      <input name="senha" type="password" id="senha" placeholder="Insira sua senha" /><br />
+      <!-- Botão de submeter formulário -->
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+    <br /><br />
+    <hr />
+    <h4>Outros inputs:</h4>
+    <form>
+        <label>Quantidade:</label><br>
+      <!-- Input de números -->
+       <input type="number" min="0" max="10"/> <br>
+     <!-- Input de data -->
+      <label>Data:</label><br><br>
+      <input type="date"/>
+       <!-- Input de arquivos -->
+        <input type="file"/>
+        <!-- Campo de texto longo (textarea) -->
+         <label>Comentários:</label><br />
+         <textarea rows="4" cols="40"></textarea>
+         <!-- Campo Invísivel -->
+          <inpute type="hidden" name="idProduto" value="9" />
+          <!-- Caixa de seleção -->
+           <select name="cursos">
+            <option value="1">Programação</option>
+            <option value="2">Design Gráfico</option>
+            <option value="3">Enfermagem</option>
+             <option value="3">Música</option>
+
+           </select>
+
+    </form>
+    <br><br>
+    <hr>
+    <h2>Exemplo de formulário completo</h2>
+    <!-- FORMULÁRIO COMPLETO -->
+     <h4>CAdastro de Usário</h4>
+     <form action="#" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Insira seu nome..."
+            id="name" name="name" required>
+            <br>
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date"><br>
+            <label for="sexo">Sexo</label>
+            <!-- Radio buttons -->
+             <input type="radio" name="sexo">Masculino
+             <input type="radio" name="sexo">Feminino
+              <input type="radio" name="sexo">Prefiro não informar
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados de endereço:</legend>
+            <label for="rua">Rua</label>
+            <input type="text">
+            <label for="numero">Número</label>
+            <input type="number">
+        </fieldset>
+        <fieldset>
+            <legend>Dados de Produto:</legend>
+            <label>Cor do produto:</label>
+            <input type="color"><br><br>
+            <!-- Checkbox -->
+            <input type="checkbox" required>Li e aceito os termos de uso
+            <br><br>
+            <input type="text" placeholder="Este campo está vazio" disabled><br><br>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+     </form>
+  </body>
 </html>
