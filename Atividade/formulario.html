@@ -14,10 +14,36 @@
             <legend>Dados Pessoais</legend>
             <label for="Nome">Nome completo</label>
             <input type="text" id="name" name="name" required>
-        </fieldset>
-            
-
+        
+        
+            <legend>Email</legend>
+            <label for="email">Digite seu email</label>
+            <input type="email" id="email" name="email" required>            
+        
          
+            <legend>Data de nascimento</legend>
+            <label for="date">Digite a data de nascença</label>
+            <input type="date" id="date"> 
+         </fieldset>
+        <br>
+            <fieldset>
+                <legend>Dados acadêmicos
+                <select name="Curso">
+                    <option value="DSM">DSM</option>
+                    <option value="ADS">ADS</option>
+                    <option value="Outros">Outros</option>
+              
+                   <input type="radio" name="Periodo">Manhã
+
+                   <input type="radio" name="Periodo">Noite
+                                
+                </legend>
+
+                </select>  
+            </fieldset>
+<br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
