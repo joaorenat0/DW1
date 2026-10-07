@@ -43,3 +43,13 @@
 .cardMaior {
     width: 100px;
 }
+.row-left-top {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: px;
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+    
+}
