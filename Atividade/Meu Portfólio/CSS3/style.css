@@ -1,0 +1,93 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho com posicionamento */
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    color: #111111;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Seletor por ID */
+#sobre {
+    color: #1a5fb4;
+}
+
+/* Seletor por classe */
+.lista-sobre {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Seletor de tag */
+li {
+    margin-bottom: 8px;
+}
+
+/* Layout com flexbox */
+.container-habilidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.habilidade {
+    position: relative;
+    border: 2px solid #1a5fb4;
+    padding: 15px;
+    background-color: #ffffff;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Pseudo-classe */
+.habilidade:hover {
+    background-color: #e8f0fe;
+    top: -4px;
+}
+
+h4 {
+    color: #c01c28;
+}
+
+.habilidade p {
+    font-family: Georgia, serif;
+}
+
+/* Seletor de atributo */
+input[type="email"] {
+    padding: 8px;
+    border: 2px solid #1a5fb4;
+    border-radius: 4px;
+}
+
+a[href^="https://github.com"] {
+    color: #1a5fb4;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
