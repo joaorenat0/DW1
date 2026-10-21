@@ -204,3 +204,12 @@ color: white;
     padding-top: 2rem;
     border-top: 1px solid #4a3226;
 }
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #4a3226;
+}
+.footer-section {
+    text-decoration: none;
+    color: white;
+}
