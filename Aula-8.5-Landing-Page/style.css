@@ -199,7 +199,7 @@ color: white;
     flex: 1;
     min-width: 200px;
 }
-.footer-section {
+.footer-section h4 {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #4a3226;
@@ -209,7 +209,7 @@ color: white;
     padding-top: 2rem;
     border-top: 1px solid #4a3226;
 }
-.footer-section {
+.footer-section a {
     text-decoration: none;
     color: white;
 }
