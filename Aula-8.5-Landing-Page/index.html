@@ -1,78 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Aroma - Os melhores Cafés Especiais</title>
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aroma - Os Melhores Cafés Especiais</title>
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <!-- Container com flexbox -->
+      <!-- Container pai com flexbox -->
+      <div class="container">
+        <!-- Container do Menu -->
+        <div class="nav">
+          <!-- Logo -->
+          <div class="logo">Café Aroma</div>
+          <!-- Menu -->
+          <nav class="menu">
+            <a href="#home">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#sobre">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Desperte Seus Sentidos</h1>
+        <p>
+          Cafés especiais selecionados para você começar o dia com energia e
+          sabor
+        </p>
+        <!-- Botão Call To Action -->
+        <button class="btn-primary">Conheça Nossos Cafés</button>
+      </div>
+    </section>
+    <!-- SEÇÃO DE PRODUTOS -->
+    <section class="produtos" id="produtos">
+      <div class="container">
+        <h2 class="section-title">Nossos Cafés</h2>
+        <!-- CARDS COM OS PRODUTOS -->
+        <div class="cards">
+          <!-- CARD 01 -->
+          <div class="card">
+            <!-- Imagem do produto -->
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop" alt="Café Expresso" />
+            <!-- Texto do produto -->
+            <div class="card-content">
+              <h3>Expresso Intenso</h3>
+              <p>
+                Sabor marcante e encorpado, perfeito para quem aprecia café
+                forte
+              </p>
+              <span class="price">R$ 18,90</span>
+            </div>
+          </div>
+
+          <!-- CARD 02 -->
+          <div class="card">
+            <!-- Imagem do produto -->
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop" alt="Café Cappuccino" />
+            <!-- Texto do produto -->
+            <div class="card-content">
+              <h3>Cappuccino Cremoso</h3>
+              <p>
+                Combinação perfeita de café, leite vaporizado e espuma aveludada
+              </p>
+              <span class="price">R$ 15,90</span>
+            </div>
+          </div>
+          <!-- CARD 03 -->
+          <div class="card">
+            <!-- Imagem do produto -->
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop
+" alt="Café Latte" />
+            <!-- Texto do produto -->
+            <div class="card-content">
+              <h3>Latte Suave</h3>
+              <p>Café suave com muito leite, ideal para momentos relaxantes</p>
+              <span class="price">R$ 14,90</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seção de Sobre -->
+     <section class="sobre" id="sobre">
         <div class="container">
-            <!-- Container do Menu -->
-            <div class="nav">
-                <!-- logo -->
-                <div class="logo">Café Aroma</div>
-                <!-- Menu -->
-                <nav class="menu">
-                    <a href="#home">Início</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#sobre">Contatos</a>
-                </nav>
-
-                <div>
-
-                </div>
+            <div class="sobre-flex">
+            <div class="sobre-imagem">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop" alt="SObre a empresa">
+            </div>
+            <div class="sobre-texto">
+                <h2>Paixão por Café</h2>
+                <p>Há mais de 10 anos, o Café Aroma seleciona os melhores grãos de cafetarias artsanais do Brasil e do mundo.</p>
+                <p>Nossa missão é proporcionar experiências únicas através de cafés especiais, preparados com técnica e carinho.</p>
+                <ul class="beneficios">
+                    <li>✓Grãos 100% arábica</li>
+                    <li>✓Torra artesanal</li>
+                    <li>✓Origem rstreável</li>
+                    <li>✓Comércio justo</li>
+                </ul>
+            </div>
             </div>
 
         </div>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Desperte seus Sentidos</h1>
-            <p>Cafés especiais selecionados para vocÊ começar o dia com energia e sabor</p>
-                <!-- Botão Call To Action -->
-                <button class="bnt-primary">Conheça Nossos Cafés</button>
 
-        </div>
-    </section>
-    <!-- Seção de Produtos -->
-     <section class="produtos" id="Produtos">
-        <div class="container">
-            <h2 class="section-title"> Nossos Cafés</h2>
-            <!-- CARDS COM OS PRDOUTOS -->
-                <div class="cards">
-                    <!-- CARD 01 -->
-                     <div class="card">
-                        <!-- Imagem do Produto -->
-                         <img src="" alt="Café Expresso">
-                            <!-- Texto do Produto -->
-                             <div class="card-content">
-                                <h3>Expresso Intenso</h3>
-                                    <p>Sabor Marcante e encorpado, perfeito para quem aprecia Café 
-forte</p>
-                                    <span class="price">R$18,90</span>
-                             </div>
-                            </div>
-
-                     <!-- CARD 02 -->
-                     <div class="card">
-                        <!-- Imagem do Produto -->
-                         <img src="" alt="Café Cappuccino">
-                            <!-- Texto do Produto -->
-                             <div class="card-content">
-                                <h3>Cappuccino Cremoso</h3>
-                                    <p>Combinação perfeita de café, leite vaporizado e espuma aveludada </p>
-                                     
      </section>
-</body>
-
+     <!-- FOOTER (informações da empresa) -->
+      <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Café Aroma</h4>
+                        <p>OS melhores cafés especiais para você!</p>
+                        <!-- Contato -->
+                         <div class="footer-section">
+                            <h4>Contatos</h4>
+                            <p>contato@cafearoma.com.br</p>
+                            <p>11-9999-9999</p>
+                         </div>
+                         <!-- Redes sociais -->
+                          <h4>Redes Sociais</h4>
+                          <p>
+                            <a href="#">Instragam</a>|
+                            <a href="#">Facebook</a>|
+                            <a href="#">Likedin</a>
+                          </p>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                 <div class="footer-bottom">
+                    <p>&copy; 026 Café Aroma. Todos os direitos reservados.</p>
+                 </div>
+            </div>
+        </div>
+      </footer>
+  </body>
 </html>
