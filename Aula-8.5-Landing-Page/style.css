@@ -57,7 +57,7 @@ body {
 
 /* A imagem cobre todo o espaço disponível */
 background-size: cover;
-background-position: center;
+background-position: center;~-
 height: 500px;
 display: flex;
 justify-content: center;
