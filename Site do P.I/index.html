@@ -3,27 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo 4Innovation - Biolens</title>
-    
+    <meta name="theme-color" content="#2E60FF">
+    <title>BioLens – Anatomia em realidade aumentada | Four Innovations</title>
+    <meta name="description" content="BioLens: app Android de realidade aumentada para o ensino de anatomia no ensino médio, da Four Innovations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-<section>
 <body>
-    <header class="header">
 
-        <div class="nav">
+<header class="topo">
+    <div class="container">
+        <div class="contato-topo">
+            <a href="mailto:contato@seudominio.com">contato@seudominio.com</a>
+        </div>
+        <nav class="barra" aria-label="Principal">
+            <a class="logo" href="#inicio" aria-label="Four Innovations – Software & Technology">
+                <!-- Para usar o arquivo oficial: troque o <svg> por <img src="logo.png" alt="Four Innovations"> -->
+                <svg viewBox="0 0 240 262" aria-hidden="true">
+                    <defs><linearGradient id="g4" x1="0.7" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#7B2FF7"/><stop offset="1" stop-color="#2E60FF"/></linearGradient></defs>
+                    <path fill="url(#g4)" d="M210 0V72L150 134L205 146L203 208L153 262V181H0Z"/>
+                    <path fill="url(#g4)" d="M232 64L240 134H158Z"/>
+                </svg>
+                <span><b>FOUR</b> INNOVATIONS</span>
+            </a>
+            <button class="menu-botao" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            <ul class="menu" id="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#telas">Telas</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a class="botao botao-p" href="#baixar">Baixar</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <div class="container">
-
-            <div class="logo"> Four Innovations</div>
-            
-           
+<main>
+<!-- INÍCIO -->
+<section class="hero" id="inicio">
+    <div class="container hero-grade">
+        <div class="hero-cartao">
+            <h1>Anatomia que você enxerga na câmera</h1>
+            <p>O BioLens é um app de realidade aumentada para o ensino de anatomia no ensino médio. Escaneie o corpo humano e veja ossos e músculos em camadas interativas.</p>
+            <p class="chamada">Baixe para Android</p>
+            <a class="botao-android" href="#baixar">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 2.5v19c0 .5.5.8.9.5L20 12 3.9 2c-.4-.3-.9 0-.9.5z"/></svg>
+                <span><small>Disponível para</small>Android</span>
+            </a>
+        </div>
+        <div class="hero-celular">
+            <div class="celular">
+                <div class="tela tela-escura">
+                    <p class="tela-titulo">BioLens</p>
+                    <div class="scanner"><img src="biolens-icone.png" alt="Torso com metade óssea e metade muscular dentro de um visor de câmera"><i></i></div>
+                    <span class="tela-botao">Escanear</span>
+                </div>
             </div>
-
         </div>
     </div>
 </section>
-    </header>
+
+<!-- SOBRE -->
+<section class="secao" id="sobre">
+    <div class="container">
+        <h2>Sobre o app</h2>
+        <p class="intro">Feito pela Four Innovations para tornar o aprendizado de anatomia mais visual, intuitivo e envolvente.</p>
+        <div class="sobre-grade">
+            <div class="sobre-celular">
+                <div class="celular celular-p">
+                    <div class="tela tela-escura"><div class="metade"><img src="biolens-icone.png" alt="" class="osso"></div></div>
+                </div>
+                <div class="celular celular-p celular-2">
+                    <div class="tela tela-escura"><div class="metade"><img src="biolens-icone.png" alt="" class="musculo"></div></div>
+                </div>
+            </div>
+            <ul class="cartoes">
+                <li><h3>Visual</h3><p>Ossos e músculos aparecem em camadas interativas, no lugar certo do corpo.</p></li>
+                <li><h3>Fácil de usar</h3><p>Basta apontar a câmera do celular. O aluno aprende explorando.</p></li>
+                <li><h3>Feito para a sala de aula</h3><p>Pensado para estudantes do ensino médio e para as aulas de anatomia.</p></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- RECURSOS -->
+<section class="azul" id="recursos">
+    <div class="container">
+        <h2>Recursos</h2>
+        <p class="intro">Tudo o que o aluno precisa para estudar o corpo humano com a câmera.</p>
+        <ul class="recursos">
+            <li><h3>Escaneamento em AR</h3><p>Escaneie o corpo humano pela câmera do celular.</p></li>
+            <li><h3>Camadas interativas</h3><p>Alterne entre as camadas e explore cada estrutura.</p></li>
+            <li><h3>Sistema ósseo</h3><p>Veja o esqueleto do tronco em realidade aumentada.</p></li>
+            <li><h3>Sistema muscular</h3><p>Veja a musculatura sob a pele, em destaque.</p></li>
+            <li><h3>Android primeiro</h3><p>Pensado para o celular Android que o aluno já tem.</p></li>
+            <li><h3>Ensino médio</h3><p>Conteúdo de anatomia para a idade e o ritmo da turma.</p></li>
+        </ul>
+    </div>
+</section>
+
+<!-- TELAS -->
+<section class="secao" id="telas">
+    <div class="container">
+        <h2>Veja as telas do app</h2>
+        <p class="intro">Deslize para o lado para ver cada etapa.</p>
+    </div>
+    <ul class="carrossel" tabindex="0" aria-label="Telas do app">
+        <li>
+            <div class="celular"><div class="tela tela-escura"><p class="tela-titulo">Escaneie</p><div class="scanner"><img src="biolens-icone.png" alt=""><i></i></div><span class="tela-botao">Escanear</span></div></div>
+            <p>1. Aponte a câmera</p>
+        </li>
+        <li>
+            <div class="celular"><div class="tela tela-escura"><p class="tela-titulo">Sistema ósseo</p><div class="metade grande"><img src="biolens-icone.png" alt="" class="osso"></div><span class="tela-botao">Trocar camada</span></div></div>
+            <p>2. Veja os ossos</p>
+        </li>
+        <li>
+            <div class="celular"><div class="tela tela-escura"><p class="tela-titulo">Sistema muscular</p><div class="metade grande"><img src="biolens-icone.png" alt="" class="musculo"></div><span class="tela-botao">Trocar camada</span></div></div>
+            <p>3. Veja os músculos</p>
+        </li>
+    </ul>
+    <!-- Quando tiver prints reais do app, troque o conteúdo de cada .tela por <img src="print1.png" alt="..."> -->
+</section>
+
+<!-- BAIXAR -->
+<section class="baixar" id="baixar">
+    <div class="container baixar-grade">
+        <div>
+            <h2>Baixe o BioLens</h2>
+            <p>Instale no seu celular Android e comece a explorar o corpo humano em realidade aumentada.</p>
+            <!-- Troque o href pelo link do Google Play ou do arquivo APK -->
+            <a class="botao-android" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 2.5v19c0 .5.5.8.9.5L20 12 3.9 2c-.4-.3-.9 0-.9.5z"/></svg>
+                <span><small>Baixar para</small>Android</span>
+            </a>
+        </div>
+        <div class="passos-caixa">
+            <h3>Como usar</h3>
+            <ol>
+                <li>Abra o app e aponte a câmera para o corpo humano.</li>
+                <li>Aguarde o escaneamento terminar.</li>
+                <li>Alterne entre ossos e músculos e explore.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE A EMPRESA -->
+<section class="secao" id="empresa">
+     
+</section>
+
+<!-- EQUIPE -->
+<section class="secao" id="equipe">
+    <div class="container">
+        <h2>Nossa equipe</h2>
+        <p class="intro">Quem desenvolveu o BioLens e a identidade da Four Innovations.</p>
+        <ul class="equipe">
+            <li><span class="foto">IP</span><h3>Italo Lopes</h3></li>
+            <li><span class="foto">LM</span><h3>Ricardo Horvath</h3></li>
+            <li><span class="foto">JS</span><h3>João Santos</h3></li>
+            <li><span class="foto">JG</span><h3>João Gonçalves</h3></li>
+        </ul>
+    </div>
+</section>
+</main>
+
+<footer class="rodape">
+    <div class="container">
+        <a class="cartao-contato" href="mailto:contato@seudominio.com">
+            <span class="icone-circ" aria-hidden="true">@</span>
+            <span>contato@seudominio.com</span>
+        </a>
+        <div class="rodape-grade">
+            <div>
+                <p class="rodape-titulo">Four Innovations</p>
+                <p>Software &amp; Technology. Uma empresa que constrói soluções digitais reais.</p>
+            </div>
+            <div>
+                <p class="rodape-titulo">Links rápidos</p>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#telas">Telas</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">© 2026 Four Innovations. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<a class="barra-baixar" href="#baixar">Baixar para Android</a>
+
+<script>
+    var b = document.querySelector('.menu-botao'), m = document.getElementById('menu');
+    b.addEventListener('click', function () {
+        var a = m.classList.toggle('aberto');
+        b.setAttribute('aria-expanded', a);
+    });
+    m.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') { m.classList.remove('aberto'); b.setAttribute('aria-expanded', 'false'); }
+    });
+</script>
 </body>
 </html>
