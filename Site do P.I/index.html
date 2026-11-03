@@ -26,6 +26,7 @@
             <ul class="menu" id="menu">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#demo">Demo</a></li>
                 <li><a href="#telas">Telas</a></li>
                 <li><a href="#empresa">Equipe</a></li>
                 <li><a class="botao botao-p" href="#baixar">Baixar</a></li>
@@ -49,11 +50,7 @@
         </div>
         <div class="hero-celular">
             <div class="celular">
-                <div class="tela tela-escura">
-                    <p class="tela-titulo">BioLens</p>
-                    <div class="scanner"><img src="biolens-icone.png" alt="Torso com metade óssea e metade muscular dentro de um visor de câmera"><i></i></div>
-                    <span class="tela-botao">Escanear</span>
-                </div>
+                <div class="tela tela-img"><img src="img/tela-escanear.png" alt="Tela de escaneamento do BioLens"></div>
             </div>
         </div>
     </div>
@@ -67,10 +64,10 @@
         <div class="sobre-grade">
             <div class="sobre-celular">
                 <div class="celular celular-p">
-                    <div class="tela tela-escura"><div class="metade"><img src="biolens-icone.png" alt="" class="osso"></div></div>
+                    <div class="tela tela-img"><img src="img/tela-ossos.png" alt="Tela do sistema ósseo"></div>
                 </div>
                 <div class="celular celular-p celular-2">
-                    <div class="tela tela-escura"><div class="metade"><img src="biolens-icone.png" alt="" class="musculo"></div></div>
+                    <div class="tela tela-img"><img src="img/tela-musculos.png" alt="Tela do sistema muscular"></div>
                 </div>
             </div>
             <ul class="cartoes">
@@ -98,6 +95,54 @@
     </div>
 </section>
 
+<!-- DEMO INTERATIVA -->
+<section class="secao demo-secao" id="demo">
+    <div class="container demo-grade">
+        <div class="demo-texto">
+            <h2>Veja como funciona</h2>
+            <p class="intro">Toque nos botões do celular e simule o uso do BioLens: abra a câmera, escaneie uma pessoa e explore o corpo humano.</p>
+            <ol class="demo-passos">
+                <li>Abra a câmera</li>
+                <li>Escaneie o corpo</li>
+                <li>Explore corpo, ossos e músculos</li>
+            </ol>
+        </div>
+        <div class="demo-celular">
+            <div class="celular celular-g">
+                <div class="tela tela-demo" id="demo-tela" data-e="inicio" data-camada="corpo">
+                    <div class="vista v-inicio">
+                        <p class="tela-titulo">BioLens</p>
+                        <p class="demo-msg">Anatomia em realidade aumentada</p>
+                        <button class="tela-botao" type="button" id="d-abrir">Abrir câmera</button>
+                    </div>
+                    <div class="vista v-camera">
+                        <img class="feed" src="img/camera-feed.png" alt="Câmera apontada para uma pessoa em pé">
+                        <i class="canto c1"></i><i class="canto c2"></i><i class="canto c3"></i><i class="canto c4"></i>
+                        <i class="linha"></i>
+                        <p class="demo-status" id="d-status" aria-live="polite">Aponte a câmera para o corpo</p>
+                        <button class="tela-botao" type="button" id="d-escanear">Escanear</button>
+                    </div>
+                    <div class="vista v-resultado">
+                        <p class="tela-titulo" id="d-titulo">Corpo humano</p>
+                        <div class="figura">
+                            <img class="f-corpo" src="img/fig-corpo.png" alt="Corpo humano em realidade aumentada">
+                            <img class="f-osso" src="img/fig-osso.png" alt="Sistema ósseo">
+                            <img class="f-musculo" src="img/fig-musculo.png" alt="Sistema muscular">
+                        </div>
+                        <p class="demo-msg" id="d-legenda">Corpo escaneado com sucesso.</p>
+                        <div class="abas" role="group" aria-label="Camadas">
+                            <button type="button" data-c="corpo" class="ativa">Corpo</button>
+                            <button type="button" data-c="osso">Ossos</button>
+                            <button type="button" data-c="musculo">Músculos</button>
+                        </div>
+                        <button class="refazer" type="button" id="d-refazer">Escanear de novo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- TELAS -->
 <section class="secao" id="telas">
     <div class="container">
@@ -106,19 +151,19 @@
     </div>
     <ul class="carrossel" tabindex="0" aria-label="Telas do app">
         <li>
-            <div class="celular"><div class="tela tela-escura"><p class="tela-titulo">Escaneie</p><div class="scanner"><img src="biolens-icone.png" alt=""><i></i></div><span class="tela-botao">Escanear</span></div></div>
+            <div class="celular"><div class="tela tela-img"><img src="img/tela-escanear.png" alt="Tela de escaneamento do BioLens com o corpo humano em realidade aumentada"></div></div>
             <p>1. Aponte a câmera</p>
         </li>
         <li>
-            <div class="celular"><div class="tela tela-escura"><p class="tela-titulo">Sistema ósseo</p><div class="metade grande"><img src="biolens-icone.png" alt="" class="osso"></div><span class="tela-botao">Trocar camada</span></div></div>
+            <div class="celular"><div class="tela tela-img"><img src="img/tela-ossos.png" alt="Tela do sistema ósseo com os ossos identificados"></div></div>
             <p>2. Veja os ossos</p>
         </li>
         <li>
-            <div class="celular"><div class="tela tela-escura"><p class="tela-titulo">Sistema muscular</p><div class="metade grande"><img src="biolens-icone.png" alt="" class="musculo"></div><span class="tela-botao">Trocar camada</span></div></div>
+            <div class="celular"><div class="tela tela-img"><img src="img/tela-musculos.png" alt="Tela do sistema muscular com os músculos identificados"></div></div>
             <p>3. Veja os músculos</p>
         </li>
     </ul>
-    <!-- Quando tiver prints reais do app, troque o conteúdo de cada .tela por <img src="print1.png" alt="..."> -->
+    <!-- Quando tiver prints reais do app, substitua img/tela-escanear.png, tela-ossos.png e tela-musculos.png pelos prints (mesmos nomes). -->
 </section>
 
 <!-- BAIXAR -->
@@ -195,6 +240,34 @@
     m.addEventListener('click', function (e) {
         if (e.target.tagName === 'A') { m.classList.remove('aberto'); b.setAttribute('aria-expanded', 'false'); }
     });
+
+    /* ===== Demo interativa ===== */
+    (function () {
+        var t = document.getElementById('demo-tela'), st = document.getElementById('d-status'), timer;
+        var info = {
+            corpo: ['Corpo humano', 'Corpo escaneado com sucesso.'],
+            osso: ['Sistema ósseo', 'Crânio, costelas, úmero, fêmur e mais.'],
+            musculo: ['Sistema muscular', 'Peitoral, deltoide, bíceps, quadríceps e mais.']
+        };
+        function estado(e) { t.setAttribute('data-e', e); }
+        function camada(c) {
+            t.setAttribute('data-camada', c);
+            document.getElementById('d-titulo').textContent = info[c][0];
+            document.getElementById('d-legenda').textContent = info[c][1];
+            document.querySelectorAll('.abas button').forEach(function (b) { b.classList.toggle('ativa', b.getAttribute('data-c') === c); });
+        }
+        document.getElementById('d-abrir').addEventListener('click', function () { st.textContent = 'Aponte a câmera para o corpo'; estado('camera'); });
+        document.getElementById('d-escanear').addEventListener('click', function () {
+            estado('escaneando'); var p = 0;
+            clearInterval(timer);
+            timer = setInterval(function () {
+                p += 4; st.textContent = 'Escaneando… ' + Math.min(p, 100) + '%';
+                if (p >= 100) { clearInterval(timer); st.textContent = 'Corpo detectado!'; setTimeout(function () { camada('corpo'); estado('resultado'); }, 500); }
+            }, 120);
+        });
+        document.querySelectorAll('.abas button').forEach(function (b) { b.addEventListener('click', function () { camada(b.getAttribute('data-c')); }); });
+        document.getElementById('d-refazer').addEventListener('click', function () { clearInterval(timer); estado('inicio'); });
+    })();
 </script>
 </body>
 </html>
