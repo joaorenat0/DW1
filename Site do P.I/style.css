@@ -198,3 +198,10 @@ h2 { font-size: 1.6rem; text-transform: uppercase; text-align: center; letter-sp
 .refazer { background: none; color: #9fb3c8; font-size: .75rem; text-decoration: underline; min-height: 32px; }
 @media (min-width: 800px) { .demo-grade { grid-template-columns: 1fr 1fr; } .demo-texto { padding-right: 2rem; } }
 @media (prefers-reduced-motion: reduce) { .tela-demo[data-e="escaneando"] .linha { animation: none; top: 46%; } .tela-demo[data-e="resultado"] .figura { animation: none; } }
+
+/* ===== Vídeo de apresentação ===== */
+.video-secao { background: #f4f5fb; }
+.video-caixa { position: relative; width: min(860px, 100%); margin-inline: auto; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--preto); box-shadow: 0 18px 40px rgba(30,34,85,.25); }
+.video-caixa iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-link { margin-top: 1rem; text-align: center; font-size: .95rem; }
+.video-link a { color: var(--azul); font-weight: 500; }
